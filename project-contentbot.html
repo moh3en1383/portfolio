@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ربات محتوا با هوش مصنوعی | نمونه‌کار</title>
+<link rel="stylesheet" href="style/index.css">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">پورتفولیو</a>
+      <nav class="nav">
+        <a href="index.html#about">درباره من</a>
+        <a href="index.html#experience">تجربه‌ها</a>
+        <a href="index.html#skills">مهارت‌ها</a>
+        <a href="portfolio.html" class="btn-nav">نمونه‌کارها</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <a href="portfolio.html" class="back-link">→ بازگشت به نمونه‌کارها</a>
+      <span class="badge">هوش مصنوعی • ربات • سلف‌هاست</span>
+      <h1>ربات محتوا — پلتفرم انتشار خودکار محتوا با هوش مصنوعی</h1>
+      <p class="page-sub">
+        یک پلتفرم سلف‌هاست‌شده که محتوا را از منابع گوناگون جمع می‌کند، با مدل هوش مصنوعی
+        بازنویسی می‌کند تا اصل و یکتا شود، با فیلترهای قابل تنظیم پاک‌سازی می‌کند و آن را
+        روی وب‌سایت و شبکه‌های اجتماعی (تلگرام، بله، واتساپ، ایکس و وردپرس) منتشر می‌کند.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container detail-layout">
+
+      <div class="detail-main">
+        <div class="project-thumb detail-thumb">
+          <img src="image/contentbot.svg" alt="ربات محتوا">
+        </div>
+
+        <h2 class="detail-title">درباره‌ی پروژه</h2>
+        <p class="lead">
+          تمام کد، دیتابیس، لاگ‌ها و اطلاعات ورود روی سرور خودتان می‌ماند و هیچ سرویس
+          ثالثی جز آن‌هایی که خودتان تنظیم می‌کنید فراخوانی نمی‌شود. کل سیستم از یک پنل وب
+          گرافیکی و یک ربات ادمین خصوصی در تلگرام کنترل می‌شود.
+        </p>
+
+        <h2 class="detail-title">خط تولید محتوا (Pipeline)</h2>
+        <ul class="detail-list">
+          <li>جمع‌آوری از فید RSS/Atom، صفحات وب دلخواه و کانال‌های مبدأ تلگرام</li>
+          <li>تحلیل، بازنویسی و خلاصه‌سازی با مدل هوش مصنوعی برای تولید متن اصل و بدون کپی</li>
+          <li>فیلترهای قابل‌تنظیم روی کلمات، لینک‌ها، یوزرنیم‌ها، شماره‌ها و عبارات باقاعده — با انتخاب بین بازنویسی، ماسک، حذف یا بلاک</li>
+          <li>دو حالت منبع: <code>ai</code> (بازنویسی و انتشار) و <code>mirror</code> (کپی زنده‌ی پیام‌های کانال مقصد با اعمال فیلترها)</li>
+          <li>پست خلاصه‌ی نهایی همراه تصویر و لینک بازگشت به سایت یا اکانت ایکس</li>
+        </ul>
+
+        <h2 class="detail-title">انتشار چندکاناله</h2>
+        <ul class="detail-list">
+          <li>انتشار هم‌زمان روی تلگرام، بله و واتساپ</li>
+          <li>انتشار روی سایت با WordPress REST و روی ایکس/توییتر</li>
+          <li>پنل وب گرافیکی با کنترل دستی روی هر آیتم (منبع، پست، مقصد، تحویل)</li>
+          <li>ربات ادمین تلگرام با دستورهایی مثل <code>/fetch</code>، <code>/process</code>، <code>/publish</code> و <code>/status</code></li>
+        </ul>
+
+        <h2 class="detail-title">امنیت و پایداری</h2>
+        <ul class="detail-list">
+          <li>دسترسی اختصاصی ادمین، رمزنگاری اطلاعات ورود و ثبت کامل رویدادها (Audit trail)</li>
+          <li>بدون endpoint پنهان و بدون وابستگی پنهان به سرویس بیرونی</li>
+          <li>کارکرد آفلاین با بازنویس محافظه‌کار داخلی در صورت نبود کلید هوش مصنوعی (با برچسب <code>offline fallback</code>)</li>
+          <li>استقرار با Docker، systemd و نمونه‌ی nginx + پشتیبان‌گیری</li>
+        </ul>
+
+        <h2 class="detail-title">کیفیت و آزمون</h2>
+        <ul class="detail-list">
+          <li>۴۰ آزمون خودکار: فیلترها، بازنویس، انتشاردهنده‌ها، خط تولید سرتاسری و پنل</li>
+          <li>آزمون جمع‌آوری واقعی روی یک سرور HTTP محلی و یک endpoint شبیه‌سازی‌شده‌ی تلگرام</li>
+          <li>لینت و قالب‌بندی با Ruff و مستندسازی کامل (نصب، راهنمای ادمین، معماری، امنیت و راهنمای فارسی)</li>
+        </ul>
+
+        <h2 class="detail-title">نتیجه</h2>
+        <p class="lead">
+          این پروژه ترکیبی از بک‌اند پایتونی، معماری مبتنی بر صف و زمان‌بند، یکپارچه‌سازی
+          با APIهای متعدد و کار با مدل‌های هوش مصنوعی است؛ نمونه‌ای از ساخت یک محصول
+          مستقل و آماده‌ی استقرار با تمرکز بر امنیت و نگهداری‌پذیری.
+        </p>
+      </div>
+
+      <aside class="detail-side">
+        <div class="side-card">
+          <h3>اطلاعات پروژه</h3>
+          <ul class="side-list">
+            <li><span>نوع:</span> پلتفرم سلف‌هاست</li>
+            <li><span>نقش:</span> توسعه‌دهنده فول‌استک</li>
+            <li><span>زبان:</span> Python 3.11+</li>
+            <li><span>استقرار:</span> Docker / systemd</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>تکنولوژی‌ها</h3>
+          <div class="skills-grid small">
+            <span class="skill">Python</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">aiogram</span>
+            <span class="skill">SQLAlchemy</span>
+            <span class="skill">Telethon</span>
+            <span class="skill">AI / LLM API</span>
+            <span class="skill">Docker</span>
+            <span class="skill">pytest</span>
+            <span class="skill">Ruff</span>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <h3>پروژه‌ی بعدی</h3>
+          <a href="project-hamrah.html" class="project-link">
+            همراه هوشمند — دستیار هوش مصنوعی فارسی
+            <span class="arrow">←</span>
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© ۱۴۰۴ — ساخته‌شده با ❤️ و لاراول</p>
+    </div>
+  </footer>
+
+</body>
+</html>

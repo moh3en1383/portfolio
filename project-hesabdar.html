@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نرم‌افزار حسابداری حسابدار | نمونه‌کار</title>
+<link rel="stylesheet" href="style/index.css">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">پورتفولیو</a>
+      <nav class="nav">
+        <a href="index.html#about">درباره من</a>
+        <a href="index.html#experience">تجربه‌ها</a>
+        <a href="index.html#skills">مهارت‌ها</a>
+        <a href="portfolio.html" class="btn-nav">نمونه‌کارها</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <a href="portfolio.html" class="back-link">→ بازگشت به نمونه‌کارها</a>
+      <span class="badge">دسکتاپ • حسابداری و انبارداری</span>
+      <h1>نرم‌افزار حسابداری و انبارداری «حسابدار»</h1>
+      <p class="page-sub">
+        نرم‌افزار دسکتاپ ویندوز برای کسب‌وکارهای کوچک و متوسط؛ از فروش، خرید و صندوق
+        تا انبارداری، هزینه‌ها، مطالبات و گزارش‌های سود و زیان — با رابط کاربری کاملاً
+        فارسی و راست‌چین و بدون نیاز به دانش حسابداری.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container detail-layout">
+
+      <div class="detail-main">
+        <div class="project-thumb detail-thumb">
+          <img src="image/hesabdar.svg" alt="نرم‌افزار حسابدار">
+        </div>
+
+        <h2 class="detail-title">درباره‌ی پروژه</h2>
+        <p class="lead">
+          «حسابدار» یک نرم‌افزار دسکتاپ آفلاین است که روی ویندوز نصب می‌شود و تمام داده‌ها
+          را در یک فایل SQLite محلی نگه می‌دارد. رابط کاربری بدون هیچ مرحله‌ی Build و با
+          HTML/CSS/JS خالص اجرا می‌شود و منطق کسب‌وکار در لایه‌ای جدا از رابط قرار دارد.
+        </p>
+
+        <h2 class="detail-title">فروش، خرید و صندوق</h2>
+        <ul class="detail-list">
+          <li>صدور فاکتور فروش و خرید چندردیفی با تخفیف ردیفی و کل، مالیات و هزینه‌های جانبی</li>
+          <li>محاسبه‌ی زنده‌ی جمع‌ها و نمایش «مبلغ به حروف» فارسی</li>
+          <li>وضعیت پیش‌نویس، قطعی و لغو‌شده با کنترل خودکار موجودی پیش از فروش</li>
+          <li>چاپ فاکتور A4 با سربرگ، مهر و امضا + خروجی اکسل</li>
+          <li>صندوق‌های نقدی و حساب‌های بانکی متعدد، انتقال وجه و ثبت دریافت/پرداخت نقدی، کارتی، حواله و چک</li>
+        </ul>
+
+        <h2 class="detail-title">انبارداری حرفه‌ای</h2>
+        <ul class="detail-list">
+          <li>ورود و خروج کالا، اصلاح موجودی بر اساس شمارش انبار و انتقال بین انبارها</li>
+          <li>کاردکس کامل هر کالا با مرجع فاکتور</li>
+          <li>محاسبه‌ی خودکار بهای تمام‌شده بر پایه‌ی <strong>میانگین موزون</strong></li>
+          <li>هشدار کالاهای زیر حد سفارش و ناموجود، ارزش‌گذاری انبار و سود بالقوه</li>
+        </ul>
+
+        <h2 class="detail-title">اشخاص و گزارش‌ها</h2>
+        <ul class="detail-list">
+          <li>مشتریان/تامین‌کنندگان با مانده‌ی لحظه‌ای، سقف اعتبار و هشدار عبور از آن</li>
+          <li>صورت‌حساب (دفتر معین) با مانده‌ی اولیه، گردش و مانده‌ی پایانی + چاپ</li>
+          <li>صورت سود و زیان کامل، فروش روزانه/ماهانه، پرفروش‌ترین کالاها و گزارش مالیات بر ارزش افزوده</li>
+          <li>بازه‌های آماده و دلخواه، چاپ گزارش و خروجی اکسل</li>
+        </ul>
+
+        <h2 class="detail-title">معماری فنی و کیفیت</h2>
+        <ul class="detail-list">
+          <li>اسکلت دسکتاپ با <strong>Electron</strong> و پل امن <code>preload</code>/IPC بین رابط و منطق</li>
+          <li>دیتابیس داخلی با <code>sql.js</code> (SQLite کامپایل‌شده به WebAssembly) — بدون نیاز به کامپایلر بومی</li>
+          <li>ذخیره‌سازی اتمیک فایل داده و پشتیبان‌گیری/بازیابی داخلی</li>
+          <li>تاریخ‌ها به‌صورت میلادی ذخیره و به‌صورت <strong>شمسی</strong> نمایش داده می‌شوند (تبدیل دقیق و بدون وابستگی خارجی)</li>
+          <li>۶۶ آزمون خودکار روی منطق حسابداری، انبار، مالیات و گزارش‌ها + آزمون خودکار رابط کاربری</li>
+        </ul>
+
+        <h2 class="detail-title">نتیجه</h2>
+        <p class="lead">
+          این پروژه نشان‌دهنده‌ی توانایی من در خروج از مرز وب و ساخت یک نرم‌افزار دسکتاپ
+          کامل و قابل نصب (خروجی exe با electron-builder) است؛ با تمرکز بر صحت محاسبات
+          مالی، کارایی روی سیستم‌های معمولی و تجربه‌ی کاربری ساده برای کاربران غیرفنی.
+        </p>
+      </div>
+
+      <aside class="detail-side">
+        <div class="side-card">
+          <h3>اطلاعات پروژه</h3>
+          <ul class="side-list">
+            <li><span>نوع:</span> نرم‌افزار دسکتاپ</li>
+            <li><span>نقش:</span> توسعه‌دهنده فول‌استک</li>
+            <li><span>پلتفرم:</span> ویندوز</li>
+            <li><span>اجرا:</span> تک‌کاربره و آفلاین</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>تکنولوژی‌ها</h3>
+          <div class="skills-grid small">
+            <span class="skill">Electron</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">sql.js (SQLite/WASM)</span>
+            <span class="skill">HTML5 &amp; CSS3</span>
+            <span class="skill">electron-builder</span>
+            <span class="skill">تقویم شمسی</span>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <h3>پروژه‌ی بعدی</h3>
+          <a href="project-contentbot.html" class="project-link">
+            ربات محتوا با هوش مصنوعی
+            <span class="arrow">←</span>
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© ۱۴۰۴ — ساخته‌شده با ❤️ و لاراول</p>
+    </div>
+  </footer>
+
+</body>
+</html>

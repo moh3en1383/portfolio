@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سامانه ردیابی فروشندگان GPS | نمونه‌کار</title>
+<link rel="stylesheet" href="style/index.css">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">پورتفولیو</a>
+      <nav class="nav">
+        <a href="index.html#about">درباره من</a>
+        <a href="index.html#experience">تجربه‌ها</a>
+        <a href="index.html#skills">مهارت‌ها</a>
+        <a href="portfolio.html" class="btn-nav">نمونه‌کارها</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <a href="portfolio.html" class="back-link">→ بازگشت به نمونه‌کارها</a>
+      <span class="badge">وب‌اپ + PWA • ردیابی و لجستیک</span>
+      <h1>سامانه مدیریت و ردیابی فروشندگان GPS</h1>
+      <p class="page-sub">
+        سیستم کامل مدیریت فروشندگان مبتنی بر موقعیت مکانی با Laravel و PWA؛ فروشنده با شروع
+        شیفت، موقعیتش خودکار ثبت می‌شود و مدیر موقعیت لحظه‌ای، مسیر طی‌شده، محدوده‌ی مجاز و
+        ساعت کاری هر فروشنده را روی نقشه می‌بیند.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container detail-layout">
+
+      <div class="detail-main">
+        <div class="project-thumb detail-thumb">
+          <img src="image/gps.svg" alt="سامانه ردیابی GPS">
+        </div>
+
+        <h2 class="detail-title">درباره‌ی پروژه</h2>
+        <p class="lead">
+          اپ فروشنده به‌صورت <strong>PWA</strong> روی گوشی نصب می‌شود و حتی در پس‌زمینه و
+          هنگام قطع اینترنت به ثبت موقعیت ادامه می‌دهد. سمت مدیر، یک پنل کامل برای نظارت
+          لحظه‌ای، تعریف محدوده‌ی مجاز و گزارش‌گیری حرفه‌ای فراهم شده است.
+        </p>
+
+        <h2 class="detail-title">اپ فروشنده (PWA)</h2>
+        <ul class="detail-list">
+          <li>ثبت‌نام و ورود با شماره موبایل، شروع/پایان شیفت با یک دکمه و تایمر زنده</li>
+          <li>ردیابی پس‌زمینه با مجوز «همیشه» و نگه‌داشتن صفحه روشن (Wake Lock)</li>
+          <li>صف آفلاین: ذخیره‌ی نقاط روی گوشی و ارسال خودکار با Background Sync پس از اتصال</li>
+          <li>فیلتر هوشمند نویز GPS: حذف نقاط کم‌دقت، پرش‌های غیرواقعی و نقاط تکراری</li>
+          <li>ثبت فروشگاه در موقعیت فعلی، مدیریت و مسیریابی به فروشگاه‌ها روی نقشه</li>
+          <li>تشخیص خودکار بازدید هنگام نزدیکی (≤۱۰۰ متر) و هشدار خروج از محدوده‌ی مجاز</li>
+          <li>نمایش زنده‌ی درصد پوشش محدوده‌ی روز و تاریخچه‌ی شیفت‌ها</li>
+        </ul>
+
+        <h2 class="detail-title">پنل مدیریت</h2>
+        <ul class="detail-list">
+          <li>نقشه‌ی زنده‌ی همه‌ی فروشندگان (سبز = در حال کار) و آمار شیفت‌ها و مسافت روز</li>
+          <li>بازپخش مسیر هر شیفت نقطه‌به‌نقطه با اسلایدر زمان</li>
+          <li>Geofencing: تعریف محدوده با رسم چندضلعی/دایره و اختصاص آن به هر فروشنده برای هر روز</li>
+          <li>هشدار لحظه‌ای خروج از محدوده (مارکر قرمز + زنگ + اعلان WebSocket)</li>
+          <li>گزارش PDF روزانه‌ی فارسی و راست‌چین (با فونت وزیرمتن) شامل مسیر هر شیفت روی نقشه</li>
+          <li>گزارش فروشگاه‌های هر شیفت: جدید ثبت‌شده، بازدید‌شده و بازدید‌نشده + ویرایش/حذف فروشگاه</li>
+          <li>صفحه‌ی «همه فروشگاه‌ها» گروه‌بندی‌شده به تفکیک فروشنده با وضعیت بازدید در روز انتخابی</li>
+        </ul>
+
+        <h2 class="detail-title">ویژگی‌های فنی</h2>
+        <ul class="detail-list">
+          <li>Broadcasting لحظه‌ای با Laravel Reverb / WebSocket</li>
+          <li>Service Worker برای نصب PWA و همگام‌سازی پس‌زمینه</li>
+          <li>نقشه‌ی تعاملی با رسم محدوده، بازپخش مسیر و محاسبه‌ی پوشش شبکه‌ای</li>
+          <li>تولید PDF فارسی سمت سرور با فونت جاسازی‌شده</li>
+        </ul>
+
+        <h2 class="detail-title">نتیجه</h2>
+        <p class="lead">
+          این پروژه نمونه‌ای از پیوند وب با سخت‌افزار و سنسورهای گوشی است: مدیریت مجوزهای
+          مرورگر، کار در شرایط آفلاین، ارتباط بلادرنگ و گزارش‌گیری حرفه‌ای — همه در یک
+          محصول عملیاتی.
+        </p>
+      </div>
+
+      <aside class="detail-side">
+        <div class="side-card">
+          <h3>اطلاعات پروژه</h3>
+          <ul class="side-list">
+            <li><span>نوع:</span> وب‌اپ + PWA</li>
+            <li><span>نقش:</span> توسعه‌دهنده فول‌استک</li>
+            <li><span>حوزه:</span> فروش و لجستیک</li>
+            <li><span>ویژگی:</span> نقشه و GPS بلادرنگ</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>تکنولوژی‌ها</h3>
+          <div class="skills-grid small">
+            <span class="skill">Laravel</span>
+            <span class="skill">Livewire</span>
+            <span class="skill">PWA / Service Worker</span>
+            <span class="skill">WebSocket / Reverb</span>
+            <span class="skill">Leaflet</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">Tailwind CSS</span>
+            <span class="skill">PDF (فارسی)</span>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <h3>پروژه‌ی بعدی</h3>
+          <a href="project-repair.html" class="project-link">
+            سامانه مدیریت تعمیرگاه
+            <span class="arrow">←</span>
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© ۱۴۰۴ — ساخته‌شده با ❤️ و لاراول</p>
+    </div>
+  </footer>
+
+</body>
+</html>
