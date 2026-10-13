@@ -1,106 +1,95 @@
-# پورتفولیو محسن مفرح — Mohsen Mofarah Portfolio
+# Mohsen Mofarah — Portfolio
 
-رزومه و نمونه‌کارهای **محسن مفرح**، توسعه‌دهنده فول‌استک و برنامه‌نویس ارشد لاراول.
-این پروژه یک وب‌سایت استاتیک کامل، فارسی و راست‌چین است که بدون هیچ مرحله‌ی ساخت (Build)
-و فقط با HTML و CSS اجرا می‌شود.
+The portfolio and professional resume of **Mohsen Mofarah**, a Full-Stack Developer specializing in Laravel and Senior-Level Backend Development.
 
----
-
-## ✨ ویژگی‌ها
-
-- **رزومه‌ی کامل:** معرفی، تجربه‌های کاری، تحصیلات و مهارت‌های دسته‌بندی‌شده
-- **۱۱ نمونه‌کار:** سامانه‌های سازمانی، مالی، فروشگاهی، هوش مصنوعی، دسکتاپ و وب
-- **فیلتر پروژه‌ها:** دسته‌بندی بر اساس نوع پروژه بدون هیچ کتابخانه‌ی خارجی
-- **صفحه‌ی اختصاصی برای هر پروژه:** با جزئیات، تصویر، تکنولوژی‌ها و اطلاعات پروژه
-- **راست‌چین و فارسی:** با فونت وزیرمتن و تقویم شمسی
-- **واکنش‌گرا (Responsive):** نمایش مناسب روی موبایل و دسکتاپ
-- **سئو:** تگ‌های متا، Open Graph و داده‌ی ساختاریافته‌ی Schema.org
-- **بدون وابستگی:** بدون فریم‌ورک، بدون npm و بدون مرحله‌ی Build
+This project is a complete, static, Persian RTL website built with HTML and CSS, with no build process required.
 
 ---
 
-## 🗂️ ساختار پروژه
+## ✨ Features
 
+- **Complete Resume:** Professional introduction, work experience, education, and categorized technical skills.
+- **11 Portfolio Projects:** Enterprise systems, financial platforms, e-commerce websites, AI applications, desktop software, and web applications.
+- **Project Filtering:** Filter projects by category without relying on external libraries.
+- **Dedicated Project Pages:** Individual pages for each project, including descriptions, screenshots, technologies, and project details.
+- **Persian RTL Support:** Right-to-left layout, Vazirmatn font, and the Persian calendar.
+- **Responsive Design:** Optimized for mobile devices, tablets, and desktop screens.
+- **SEO Optimization:** Meta tags, Open Graph metadata, and Schema.org structured data.
+- **Zero Dependencies:** No frameworks, npm packages, or build tools required.
+
+---
+
+## 🗂️ Project Structure
+
+```text
+index.html                     Main resume page
+portfolio.html                 Portfolio gallery with filtering
+project-karan.html             Karan Enterprise Automation (HRMS + PMS)
+project-scanbusiness.html      Scanbusiness Organizational Assessment Platform
+project-lodipy.html            Lodipy E-commerce Platform
+project-profin.html            ProFin — Project, Finance & Payroll Management
+project-technomid.html         Technomid Online Store
+project-hesabdar.html          Hesabdar Desktop Accounting Software
+project-contentbot.html        AI-Powered Content Bot
+project-hamrah.html            Hamrah — Persian AI Assistant
+project-gps.html               GPS Sales Tracking System
+project-repair.html            Repair Shop Management System
+project-sarein.html            Sarein Ticket — Ordering & Support Platform
+image/                         Project screenshots and images
+style/index.css                Global stylesheet
 ```
-index.html                     صفحه‌ی اصلی رزومه
-portfolio.html                 لیست نمونه‌کارها + فیلتر
-project-karan.html             سامانه اتوماسیون اداری کاران (HRMS + PMS)
-project-scanbusiness.html      پلتفرم ارزیابی سازمانی Scanbusiness
-project-lodipy.html            پلتفرم فروشگاهی لودی‌پی
-project-profin.html            ProFin — مدیریت پروژه، مالی و حقوق
-project-technomid.html         فروشگاه آنلاین تکنومید
-project-hesabdar.html          نرم‌افزار دسکتاپ حسابداری «حسابدار»
-project-contentbot.html        ربات محتوا با هوش مصنوعی
-project-hamrah.html            همراه هوشمند — دستیار هوش مصنوعی فارسی
-project-gps.html               سامانه ردیابی فروشندگان GPS
-project-repair.html            سامانه مدیریت تعمیرگاه
-project-sarein.html            سرین تیکت — سامانه سفارش و پشتیبانی
-image/                         تصاویر نمونه‌کارها
-style/index.css                استایل سراسری سایت
-```
 
 ---
 
-## 🚀 اجرا
+## 🚀 Getting Started
 
-نیازی به نصب هیچ ابزاری نیست؛ کافی است فایل `index.html` را در مرورگر باز کنید.
-اگر می‌خواهید مثل یک سرور واقعی اجرا شود:
+No additional tools or dependencies are required. Simply open `index.html` in your browser.
+
+To run the website using a local development server:
 
 ```bash
 # Python 3
 python -m http.server 8080
 
-# سپس در مرورگر باز کنید:
+# Open the following URL in your browser:
 # http://localhost:8080
 ```
 
----
 
-## 🌐 انتشار روی GitHub Pages
+## 🧰 Technologies
 
-۱. وارد ریپو شوید: **Settings → Pages**
-۲. در بخش **Source** گزینه‌ی `Deploy from a branch` را انتخاب کنید.
-۳. Branch را روی `main` و پوشه را روی `/ (root)` بگذارید و **Save** کنید.
-۴. پس از چند لحظه سایت روی این آدرس در دسترس است:
+`HTML5` · `CSS3` · `Vanilla JavaScript` · `Vazirmatn Font`
 
-```
-https://moh3en1383.github.io/portfolio/
-```
+No frameworks, npm packages, or additional build dependencies are required.
 
 ---
 
-## 🧰 تکنولوژی‌ها
+## 🧩 Featured Projects
 
-`HTML5` · `CSS3` · `JavaScript (Vanilla)` · `Vazirmatn Font` — بدون هیچ وابستگی خارجی دیگر.
-
----
-
-## 🧩 نمونه‌کارهای نمایش‌داده‌شده
-
-| پروژه | نوع | تکنولوژی‌ها |
+| Project | Category | Technologies |
 |---|---|---|
-| کاران | HRMS + PMS سازمانی | Laravel, Vue.js, MySQL, Redis |
-| Scanbusiness | پلتفرم ارزیابی سازمانی | Laravel 11, Nuxt.js, TypeScript |
-| لودی‌پی | فروشگاه محصولات دیجیتال | Laravel 12, Livewire 3, Tailwind |
-| ProFin | پروژه، مالی و حقوق و دستمزد | Laravel 13, Livewire 4, ApexCharts |
-| تکنومید | فروشگاه سخت‌افزار + PC Builder | Laravel, Livewire, Tailwind |
-| حسابدار | نرم‌افزار دسکتاپ حسابداری | Electron, Node.js, SQLite/WASM |
-| ربات محتوا | انتشار خودکار با هوش مصنوعی | Python, FastAPI, aiogram, AI |
-| همراه هوشمند | دستیار هوش مصنوعی فارسی | React 19, TypeScript, Three.js |
-| ردیاب GPS | ردیابی فروشندگان | Laravel, PWA, WebSocket |
-| سامانه تعمیرگاه | CRM ماژولار | Laravel Modules, Livewire |
-| سرین تیکت | سفارش و پشتیبانی | Laravel, Livewire |
+| Karan | Enterprise HRMS & PMS | Laravel, Vue.js, MySQL, Redis |
+| Scanbusiness | Organizational Assessment Platform | Laravel 11, Nuxt.js, TypeScript |
+| Lodipy | Digital Products E-commerce | Laravel 12, Livewire 3, Tailwind CSS |
+| ProFin | Project, Finance & Payroll Management | Laravel 13, Livewire 4, ApexCharts |
+| Technomid | Hardware Store & PC Builder | Laravel, Livewire, Tailwind CSS |
+| Hesabdar | Desktop Accounting Software | Electron, Node.js, SQLite/WASM |
+| Content Bot | AI-Powered Content Automation | Python, FastAPI, aiogram, AI |
+| Hamrah | Persian AI Assistant | React 19, TypeScript, Three.js |
+| GPS Tracker | Sales Force Tracking System | Laravel, PWA, WebSockets |
+| Repair Management | Modular Repair Shop CRM | Laravel Modules, Livewire |
+| Sarein Ticket | Ordering & Support Platform | Laravel, Livewire |
 
 ---
 
-## 📫 تماس
+## 📫 Contact
 
-- **ایمیل:** [mohsenmofarah03@gmail.com](mailto:mohsenmofarah03@gmail.com)
-- **تلفن:** ۰۹۳۳ ۶۸۴ ۶۰۷۴
-- **گیت‌هاب:** [github.com/moh3en1383](https://github.com/moh3en1383)
-- **تلگرام:** [@MohsenDevv](https://t.me/MohsenDevv)
-- **اینستاگرام:** [mohseen__mh](https://instagram.com/mohseen__mh)
+- **Email:** [mohsenmofarah03@gmail.com](mailto:mohsenmofarah03@gmail.com)
+- **Phone:** +98 933 684 6074
+- **GitHub:** [github.com/moh3en1383](https://github.com/moh3en1383)
+- **Telegram:** [@MohsenDevv](https://t.me/MohsenDevv)
+- **Instagram:** [@mohseen__mh](https://instagram.com/mohseen__mh)
 
 ---
 
-© ۱۴۰۴ — محسن مفرح
+© 2026 Mohsen Mofarah. All rights reserved.
