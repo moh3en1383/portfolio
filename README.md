@@ -1,6 +1,6 @@
 # Mohsen Mofarah — Portfolio
 
-The portfolio and professional resume of **Mohsen Mofarah**, a Full-Stack Developer specializing in Laravel and Senior-Level Backend Development.
+The portfolio and professional resume of **Mohsen Mofarah**, a senior backend developer focused on Laravel and REST APIs, with frontend experience in Vue.js and Nuxt.
 
 This project is a complete, static, Persian RTL website built with HTML and CSS, with no build process required.
 
