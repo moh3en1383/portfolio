@@ -65,17 +65,29 @@
           <a href="#contact" class="text-link">تماس با من</a>
         </div>
       </div>
-      <a class="featured-project" href="project-scanbusiness.html">
-        <img src="image/scan.png" alt="" width="2540" height="1272">
-        <div class="feature-caption">
-          <div>
-            <span class="feature-role">نمونه‌کار بک‌اند</span>
-            <h2>سامانه ارزیابی سازمانی <bdi>Scanbusiness</bdi></h2>
-            <p>طراحی API لاراول برای فرانت‌اند <bdi>Nuxt</bdi></p>
-          </div>
-          <span class="feature-arrow" aria-hidden="true">←</span>
+      <figure class="api-demo" aria-label="نمایش مسیر یک درخواست از Vue به لاراول و دریافت پاسخ JSON">
+        <div class="editor-bar" dir="ltr">
+          <span>routes/<strong>api.php</strong></span>
+          <label class="motion-control" title="توقف یا ادامهٔ انیمیشن">
+            <input type="checkbox" aria-label="توقف انیمیشن">
+            <span aria-hidden="true"></span>
+          </label>
         </div>
-      </a>
+        <div class="api-map" dir="ltr" aria-hidden="true">
+          <div class="api-node"><span>&lt;/&gt;</span>Vue</div>
+          <i class="wire request"></i>
+          <div class="api-core"><i></i><i></i><i></i><b>Laravel</b></div>
+          <i class="wire response"></i>
+          <div class="api-node"><span>{ }</span>JSON</div>
+        </div>
+        <div class="route-sample" dir="ltr">
+          <p class="request-line"><b>GET</b> /api/status</p>
+          <pre><code><em>Route</em>::get(<span>'/status'</span>, fn () =&gt;
+    [<span>'status'</span> =&gt; <span>'ok'</span>]
+);</code></pre>
+          <div class="response-line"><b>200 OK</b><code>{"status":"ok"}</code></div>
+        </div>
+      </figure>
     </div>
   </section>
 
@@ -120,7 +132,7 @@
             <h3>توسعه‌دهنده فول‌استک — پروژه‌های سازمانی و مستقل</h3>
             <span class="date">۱۴۰۱ — اکنون</span>
             <p>
-              روی سامانه منابع انسانی کاران و فروشگاه‌های لودی‌پی و تکنومید کار کرده‌ام. در Scanbusiness مسئول بک‌اند لاراول و APIهایی بودم که پنل ارزیابی سازمانی از آن‌ها استفاده می‌کند.
+              روی سامانه منابع انسانی کاران و فروشگاه‌های لودی‌پی و تکنومید کار کرده‌ام. در <a class="text-link" href="project-scanbusiness.html">Scanbusiness</a> مسئول بک‌اند لاراول و APIهایی بودم که پنل ارزیابی سازمانی از آن‌ها استفاده می‌کند.
             </p>
           </div>
         </div>
