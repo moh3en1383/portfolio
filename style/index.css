@@ -121,6 +121,10 @@ main .section { border-top: 1px solid var(--border); }
 .section-title { font-size: 1.45rem; }
 .section-title small { display: block; font-size: .85rem; font-weight: 400; color: var(--muted); }
 .skill-levels { display: grid; gap: 24px; }
+.skill-details { display: grid; gap: 12px; padding-top: 16px; border-top: 1px solid var(--border); }
+.skill-details > div { display: flex; flex-wrap: wrap; gap: 2px 18px; }
+.skill-details dt { min-width: 7rem; font-weight: 650; }
+.skill-details dd { color: var(--muted); }
 .skill-level { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: baseline; }
 .skill-level label { font-weight: 650; }
 .skill-level span { color: var(--accent); font-variant-numeric: tabular-nums; }
