@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سامانه ردیابی فروشندگان GPS | نمونه‌کار</title>
+<title>راهیکا | سامانه مدیریت نیروهای فروش و پخش</title>
 <link rel="stylesheet" href="style/index.css">
 <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
 </head>
@@ -24,12 +24,11 @@
   <section class="page-head">
     <div class="container">
       <a href="portfolio.html" class="back-link">→ بازگشت به نمونه‌کارها</a>
-      <span class="badge">وب‌اپ + PWA • ردیابی و لجستیک</span>
-      <h1>سامانه مدیریت و ردیابی فروشندگان GPS</h1>
+      <span class="badge">اندروید و وب</span>
+      <h1>راهیکا، مدیریت نیروهای فروش و پخش</h1>
       <p class="page-sub">
-        سیستم کامل مدیریت فروشندگان مبتنی بر موقعیت مکانی با Laravel و PWA؛ فروشنده با شروع
-        شیفت، موقعیتش خودکار ثبت می‌شود و مدیر موقعیت لحظه‌ای، مسیر طی‌شده، محدوده‌ی مجاز و
-        ساعت کاری هر فروشنده را روی نقشه می‌بیند.
+        راهیکا برای تیم‌هایی است که بیرون از دفتر کار می‌کنند. فروشنده بازدید مشتری را ثبت می‌کند،
+        راننده تحویل بار را گزارش می‌دهد و مدیر مسیر و نتیجهٔ کار هر دو را در پنل وب می‌بیند.
       </p>
     </div>
   </section>
@@ -38,27 +37,30 @@
     <div class="container detail-layout">
 
       <div class="detail-main">
-        <div class="project-thumb detail-thumb">
-          <img src="image/gps.png" alt="سامانه ردیابی GPS">
-        </div>
+        <img class="rahika-preview" src="image/gps.png" width="1425" height="704" alt="صفحه معرفی راهیکا با نمای آماری بازدیدها، مشتریان جدید و مسافت طی‌شده">
 
-        <h2 class="detail-title">درباره‌ی پروژه</h2>
+        <h2 class="detail-title">دو اپ اندروید برای دو نقش</h2>
         <p class="lead">
-          اپ فروشنده به‌صورت <strong>PWA</strong> روی گوشی نصب می‌شود و حتی در پس‌زمینه و
-          هنگام قطع اینترنت به ثبت موقعیت ادامه می‌دهد. سمت مدیر، یک پنل کامل برای نظارت
-          لحظه‌ای، تعریف محدوده‌ی مجاز و گزارش‌گیری حرفه‌ای فراهم شده است.
+          اپ فروشنده و اپ راننده با Kotlin و Jetpack Compose ساخته شده‌اند. هرکدام فایل نصب
+          و صفحهٔ اصلی خودش را دارد. هر دو از یک سرویس مشترک برای ثبت موقعیت در طول شیفت استفاده می‌کنند.
         </p>
 
-        <h2 class="detail-title">اپ فروشنده (PWA)</h2>
+        <h2 class="detail-title">اپ فروشنده</h2>
         <ul class="detail-list">
           <li>ثبت‌نام و ورود با شماره موبایل، شروع/پایان شیفت با یک دکمه و تایمر زنده</li>
-          <li>ردیابی پس‌زمینه با مجوز «همیشه» و نگه‌داشتن صفحه روشن (Wake Lock)</li>
-          <li>صف آفلاین: ذخیره‌ی نقاط روی گوشی و ارسال خودکار با Background Sync پس از اتصال</li>
+          <li>ثبت موقعیت در پس‌زمینهٔ اندروید، حتی وقتی صفحهٔ گوشی خاموش است</li>
+          <li>نگهداری نقاط مسیر روی گوشی هنگام قطع اینترنت و ارسال آن‌ها بعد از اتصال</li>
           <li>فیلتر هوشمند نویز GPS: حذف نقاط کم‌دقت، پرش‌های غیرواقعی و نقاط تکراری</li>
           <li>ثبت فروشگاه در موقعیت فعلی، مدیریت و مسیریابی به فروشگاه‌ها روی نقشه</li>
           <li>تشخیص خودکار بازدید هنگام نزدیکی (≤۱۰۰ متر) و هشدار خروج از محدوده‌ی مجاز</li>
           <li>نمایش زنده‌ی درصد پوشش محدوده‌ی روز و تاریخچه‌ی شیفت‌ها</li>
         </ul>
+
+        <h2 class="detail-title">اپ راننده</h2>
+        <p class="lead">
+          راننده فهرست تحویل‌های روز و مسیر پیشنهادی را روی گوشی می‌بیند. در هر توقف،
+          تحویل سفارش را ثبت می‌کند یا دلیل تحویل‌نشدن آن را برای تیم پخش می‌نویسد.
+        </p>
 
         <h2 class="detail-title">پنل مدیریت</h2>
         <ul class="detail-list">
@@ -79,19 +81,13 @@
           <li>تولید PDF فارسی سمت سرور با فونت جاسازی‌شده</li>
         </ul>
 
-        <h2 class="detail-title">نتیجه</h2>
-        <p class="lead">
-          این پروژه نمونه‌ای از پیوند وب با سخت‌افزار و سنسورهای گوشی است: مدیریت مجوزهای
-          مرورگر، کار در شرایط آفلاین، ارتباط بلادرنگ و گزارش‌گیری حرفه‌ای — همه در یک
-          محصول عملیاتی.
-        </p>
       </div>
 
       <aside class="detail-side">
         <div class="side-card">
           <h3>اطلاعات پروژه</h3>
           <ul class="side-list">
-            <li><span>نوع:</span> وب‌اپ + PWA</li>
+            <li><span>نوع:</span> اپ‌های اندروید، پنل وب و PWA</li>
             <li><span>نقش:</span> توسعه‌دهنده فول‌استک</li>
             <li><span>حوزه:</span> فروش و لجستیک</li>
             <li><span>ویژگی:</span> نقشه و GPS بلادرنگ</li>
@@ -102,7 +98,7 @@
           <h3>تکنولوژی‌ها</h3>
           <div class="skills-grid small">
             <span class="skill">Laravel</span>
-            <span class="skill">Livewire</span>
+            <span class="skill">Kotlin / Jetpack Compose</span>
             <span class="skill">PWA / Service Worker</span>
             <span class="skill">WebSocket / Reverb</span>
             <span class="skill">Leaflet</span>

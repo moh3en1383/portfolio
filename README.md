@@ -76,7 +76,7 @@ No frameworks, npm packages, or additional build dependencies are required.
 | Hesabdar | Desktop Accounting Software | Electron, Node.js, SQLite/WASM |
 | Content Bot | AI-Powered Content Automation | Python, FastAPI, aiogram, AI |
 | Hamrah | Persian AI Assistant | React 19, TypeScript, Three.js |
-| GPS Tracker | Sales Force Tracking System | Laravel, PWA, WebSockets |
+| Rahika | Field Sales and Delivery Management | Laravel, Kotlin Android apps for sellers and drivers, PWA, WebSockets |
 | Repair Management | Modular Repair Shop CRM | Laravel Modules, Livewire |
 | Sarein Ticket | Ordering & Support Platform | Laravel, Livewire |
 
